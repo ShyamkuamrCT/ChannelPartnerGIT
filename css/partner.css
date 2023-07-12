@@ -1,0 +1,131 @@
+﻿.full-backgrodd {  
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("../img/pexels-photo-373543.jpeg");    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.full-centr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    height: auto;
+    width: 80%;
+    padding: 60px;
+}
+
+.left-part {
+    width: 35%;
+}
+
+.right-part {
+    width: 65%;
+}
+
+.main-flx {
+    display: flex;
+    gap: 20px;
+}
+
+.portal-logo {
+    margin-top: 40px;
+}
+
+.portal-logo img {
+    width: 100%;
+    max-width: 85%;
+}
+
+.rctangle {
+    width: 65px;
+    height: 15px;
+    border: 3px solid #00b48a;
+}
+
+.heding {
+    margin-top: 10px;
+}
+
+.heding h2 {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.heding h6 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.right-heading h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.right-heading h3 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 28px;
+}
+
+.para-graph {
+    margin-top: 30px;
+}
+
+.para-graph p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.specialize {
+    margin-top: 30px;
+}
+
+.specialize h6 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.specialize h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+/* ..........footer sign css........ */
+
+.footer-sign {
+    display: flex;
+    gap: 5px;
+    margin-top: 130px;
+}
+
+.sign img {
+    width: 100%;
+    max-width: 80%;
+}
+
+.sign h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.sign h6 {
+    font-size: 14px;
+    font-weight: 200;
+}
+.btn-cer:hover,.btn-cer:visited,.btn-cer:active{
+    color: #fff;
+    background: #eea236ad;
+}
+/* ..........end........ */

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wilio Survey, Quotation, Review and Register form Wizard by Ansonika.">
+    <meta name="author" content="Ansonika">
+    <title>CriterionTech Partner Portal | Partner Application</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/menu.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+	<link href="../css/vendors.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="../css/custom.css" rel="stylesheet">
+	
+	<!-- MODERNIZR MENU -->
+	<script src="../js/modernizr.js"></script>
+	
+</head>
+
+<body>
+	
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload -->
+	
+	<div id="loader_form">
+		<div data-loader="circle-side-2"></div>
+	</div><!-- /loader_form -->
+	
+	<!-- <nav>
+		<ul class="cd-primary-nav">
+			<li><a href="index.html" class="animated_link">Home</a></li>
+			<li><a href="quotation-wizard-version.html" class="animated_link">Quote Version</a></li>
+			<li><a href="review-wizard-version.html" class="animated_link">Review Version</a></li>
+			<li><a href="registration-wizard-version.html" class="animated_link">Registration Version</a></li>
+			<li><a href="about.html" class="animated_link">About Us</a></li>
+			<li><a href="contacts.html" class="animated_link">Contact Us</a></li>
+			<li><a href="rtl/index.html" class="animated_link">RTL Version</a></li>
+		</ul>
+	</nav> -->
+	<!-- /menu -->
+	
+	<div class="container-fluid full-height">
+		<div class="row row-height">
+			<div class="col-lg-6 content-left">
+				<div class="content-left-wrapper">
+					<a href="index.html" id="logo"><img src="img/logo.webp" alt="" width="auto" height="50"></a>
+					
+					<!-- /social -->
+					<div class="d-none d-md-block">
+						<figure><img src="../img/info_graphic_1.svg" alt="" class="img-fluid"></figure>
+						<h2>CriterionTech Partner Portal</h2>
+						<h4 class="text-white">Account Application Form</h4>
+						<p>Please fill out the registration form below.<br> All fields marked with an asterisk (*) are required.</p>
+						
+						<a href="#start" class="btn_1 rounded mobile_btn">Start Now!</a>
+					</div>
+					<div class="copy">© Copyright 2023 Criterion Tech. All rights reserved.</div>
+				</div>
+				<!-- /content-left-wrapper -->
+			</div>
+			<!-- /content-left -->
+
+			<div class="col-lg-6 content-right" id="start">
+				<div id="wizard_container">
+					<div id="top-wizard">
+							<div id="progressbar"></div>
+						</div>
+						<!-- <h2 class="d-none d-sm-block">Partner Account Application Form</h2> -->
+						<!-- /top-wizard -->
+						<form id="submitPersonalDetails" method="POST" action="javascript::void();">
+							<!-- <input id="website" name="website" type="text" value=""> -->
+							<!-- Leave for security protection, read docs for details -->
+							<div id="middle-wizard">
+                                <div class="step">
+									<h2 class="form-title">Contact Information</h2>
+									<h3 class="main_question"><strong>1/4</strong>Please provide your contact details below.</h3>
+									<div class="row">
+										
+										<div class="col-lg-6">
+											<div class="form-group">
+												<input type="text" readonly name="orgnizationName" id="orgnizationName" class="form-control required orgnizationName" placeholder="Orgnization Name*">
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-group">
+												<input type="text" name="password" id="password" required class="form-control required" placeholder="Password*">
+												
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="form-group">
+												<div class="styled-select clearfix">
+													<textarea class="wide required" name="address" id="address" placeholder="Address*"></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="form-group">
+												<div class=" clearfix">
+													<select class="required" name="country" id="country" onchange="getallstate()">                    
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-group">
+												<div class="clearfix">
+													<select class="required" name="state" id="state" onchange="getallcity();">
+										
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="form-group">
+												<div class="clearfix">
+													<select class="required" name="city" id="city">
+													
+																				   
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-group">
+												<input type="text" name="postalCode" id="postalCode" class="form-control required" placeholder="Zip / Postal Code*">
+											</div>
+										</div>
+									</div>
+								
+									<!-- /row -->
+									
+								</div>
+								<!-- /step-->
+								<div class="step">
+									<h2 class="form-title">Company Information</h2>
+									<h3 class="main_question"><strong>2/4</strong>Please provide your company's details below.</h3>
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="form-group">
+												<div class="styled-select clearfix">
+													<textarea class="wide required" name="companyAddress" id="companyAddress" placeholder="Company Address Name*"></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="form-group">
+												<div class="clearfix">
+													<select class="required" name="companyCountry" id="companyCountry" onchange ="getcompanystate();">
+														<option value="">Select Country</option>                     
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-group">
+												<div class="clearfix">
+													<select class="required" name="companyState" id="companyState" onchange ="getcompanycity();">
+														<option value="">Select State</option>
+																			 
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="form-group">
+												<div class="clearfix">
+													<select class="required" name="companyCity" id="companyCity">	
+														<option value="">select City</option>				   
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-group">
+												<input type="text" name="companyPostalCode" id="companyPostalCode" class="form-control required" placeholder="Zip / Postal Code*">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /step-->
+								<div class="step">
+									<h2 class="form-title">Company Information</h2>
+									<h3 class="main_question"><strong>3/4</strong>Please fill all company details below</h3>
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="form-group">
+												<div class="styled-select clearfix">
+													<select class="wide required" name="totalRevenue" id="totalRevenue">
+														<option value="">your organization's total revenue*</option>
+														<option value="20">20</option>
+														<option value="100">100</option>
+														<option value="500">500</option>
+														<option value="1000">1000</option>
+																				   
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6">
+												<div class="form-group">
+													<div class="styled-select clearfix">
+														<select class="wide required" name="totalActiveCustomer" id="totalActiveCustomer">
+															<option value="">How many active customers?*</option>
+															<option value="200">200</option>
+															<option value="500">500</option>
+															<option value="1000">1000</option>
+															<option value="1500">1500</option>
+															<option value="2000">2000</option>		   
+														</select>
+													</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="form-group">
+												<input type="text" name="noofEmployee" id="noofEmployee" class="form-control required" placeholder="How many employees does your company have?*">
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-group">
+												<input type="text" name="companyVendor" id="companyVendor" class="form-control required" placeholder="What other vendor products does your company sell?*">
+											</div>
+										</div>
+										
+									</div>
+									
+									<div class="row">
+										
+										<div class="col-lg-6">
+											<div class="form-group">
+												<input type="text" name="websiteurl" id="websiteurl" class="form-control" placeholder="website url">
+												<span id="weberror"></span>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-group">
+												<input type="text" name="website" id="website" class="form-control" placeholder="user">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /step-->
+								
+								<div class="submit step">
+									<!-- <div id="successmsg"></div> -->
+									<h3 class="main_question"><strong>4/4</strong>Terms and conditions</h3>
+									<div class="summary">
+										<p>
+											Criterion Tech Private Limited (“Criterion Tech”) is the owner, proprietor and operator of the website www.criteriontech.in (“Website”) and affiliate sites namely digidoctor.in, edumation,in , knowmed.com, nutrianalyser.com and medvantage.tech and also mobile applications namely digidoctor, edumation, knowmed ,nutrianalyser, available on the Google Play Store and the Apple App Store (“Mobile App”). Criterion Tech provides healthcare and educational related software products.
+										</p>
+										<!-- <ul>
+											<li><strong>1</strong>
+												<h5>How do rate your overall satisfaction about the service provided?</h5>
+												<p id="question_1"></p>
+											</li>
+											<li><strong>2</strong>
+												<h5>How did you hear about our company?</h5>
+												<p id="question_2"></p>
+											</li>
+											<li><strong>3</strong>
+												<h5>Do you think to suggest our company to a friend or parent?</h5>
+												<p id="question_3"></p>
+												<p id="additional_message"></p>
+											</li>
+										</ul> -->
+									</div>
+								</div>
+								<!-- /step-->
+							</div>
+							<!-- /middle-wizard -->
+							<div id="bottom-wizard">
+								<button type="button" name="backward" class="backward">Prev</button>
+								<button type="button" name="forward" class="forward">Next</button>
+								<button type="submit" name="process" id="process" onclick="submitApplication();" class="submit">Submit</button>
+							</div>
+							<!-- /bottom-wizard -->
+						</form>
+					</div>
+					<!-- /Wizard container -->
+			</div>
+			<!-- /content-right-->
+		</div>
+		<!-- /row-->
+	</div>
+	<!-- /container-fluid -->
+
+	<div class="cd-overlay-nav">
+		<span></span>
+	</div>
+	<!-- /cd-overlay-nav -->
+
+	<div class="cd-overlay-content">
+		<span></span>
+	</div>
+	<!-- /cd-overlay-content -->
+
+	<a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+	<!-- /menu button -->
+	
+	<!-- Modal terms -->
+	<div class="modal fade" id="success-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p><strong>Criterion Tech Private Limited (“Criterion Tech”)</strong> is the owner, proprietor and operator of the website www.criteriontech.in (“Website”) and affiliate sites namely digidoctor.in, edumation,in , knowmed.com, nutrianalyser.com and medvantage.tech and also mobile applications namely digidoctor, edumation, knowmed ,nutrianalyser, available on the Google Play Store and the Apple App Store (“Mobile App”). Criterion Tech provides healthcare and educational related software products.</p>
+					</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	<!-- success Modal terms -->
+	<div class="modal success-txt"  tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" id="closemodelsec">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel ">Success!</h4>
+					<button type="button" class="btn-close" id="closeSecpsec" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div id="successmsg"></div>
+			
+					<img src="../img/7efs.gif">
+					</div>
+				<div class="modal-footer">
+					&nbsp;
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	
+	<!-- COMMON SCRIPTS -->
+	<script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/common_scripts.min.js"></script>
+	<script src="../js/velocity.min.js"></script>
+	<script src="../js/functions.js"></script>
+
+	<!-- Wizard script -->
+	<script src="../js/survey_func.js"></script>
+	<script src="../js/custom.js"></script>
+	<script>
+		if(localStorage.getItem("companyname") ==null){
+    window.setTimeout(function() {
+        window.location.href = 'http://localhost/partner/';
+        }, 1000);
+}
+	</script>
+
+</body>
+</html>

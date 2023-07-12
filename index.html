@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wilio Survey, Quotation, Review and Register form Wizard by Ansonika.">
+    <meta name="author" content="Ansonika">
+    <title>CriterionTech Partner Portal | Partner Application</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+	
+	<!-- MODERNIZR MENU -->
+	<script src="js/modernizr.js"></script>
+	
+</head>
+
+<body>
+	
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload -->
+	
+	<div id="loader_form">
+		<div data-loader="circle-side-2"></div>
+	</div><!-- /loader_form -->
+	
+
+	<!-- /menu -->
+	
+	<div class="container-fluid full-height">
+		<div class="row row-height">
+			<div class="col-lg-6 content-left">
+				<div class="content-left-wrapper">
+					<a href="index.html" id="logo"><img src="img/logo.webp" alt="" width="auto" height="50"></a>
+					
+					<!-- /social -->
+					<div class="d-none d-md-block">
+						<figure><img src="img/info_graphic_1.svg" alt="" class="img-fluid"></figure>
+						<h2>CriterionTech Partner Portal</h2>
+						<h4 class="text-white">Account Application Form</h4>
+						<p>Please fill out the registration form below.<br> All fields marked with an asterisk (*) are required.</p>
+						
+						<a href="#start" class="btn_1 rounded mobile_btn">Start Now!</a>
+					</div>
+					<div class="copy">© Copyright 2023 Criterion Tech. All rights reserved.</div>
+				</div>
+				<!-- /content-left-wrapper -->
+			</div>
+			<!-- /content-left -->
+
+			<div class="col-lg-6 content-right" id="start">
+				<div id="wizard_container">
+					<!-- <div id="top-wizard">
+							<div id="progressbar"></div>
+						</div> -->
+						
+						<!-- <h2 class="d-none d-sm-block">Partner Account Application Form</h2> -->
+						<!-- /top-wizard -->
+						<form id="submitPersonalDetails" method="POST" action="javascript::void();" name="submitPersonalDetails">
+							<input id="website" name="website" type="text" value="">
+							<!-- Leave for security protection, read docs for details -->
+							<div id="middle-wizard">
+								<div class="step">
+									<h2 class="form-title">Contact Information</h2>
+									<h3 class="main_question">Please provide your contact details below.</h3>
+									<div id="errorText"></div>
+									
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="form-group">
+												<input type="text" name="contactPersonName" id="contactPersonName" required class="form-control required" placeholder="Contact Person Name*">
+												<div class="errorfname"></div>
+											</div>
+										</div>
+										
+										
+									</div>
+
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="form-group">
+												<input type="email" name="email" id="email" required class="form-control required" placeholder="Your Email*">
+												<div class="erroremail"></div>
+											</div>
+										</div>
+										
+										<div class="col-lg-6">
+											<div class="form-group">
+												<input type="text" name="phone" id="phone" required class="form-control required" placeholder="Phone No.*">
+												<div class="errorphone"></div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="form-group">
+												<div class="styled-select clearfix">
+													<select class="wide jobTitle" name="jobTitle" id="jobTitle">
+													</select>
+													<div class="errorjobtitle"></div>
+												</div>
+												
+											</div>
+											
+										</div>
+										<div class="col-lg-6">
+											<div class="form-group">
+												<input type="text" name="organization" id="organization"  class="form-control required" placeholder="Orgnization Name*">
+												<div class="errororg"></div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="form-group terms">
+												<label class="container_check">Please accept our <a href="#" data-bs-toggle="modal" data-bs-target="#terms-txt">Terms and conditions</a>
+													<input type="checkbox" name="terms" id="terms" value="1" class="required">
+													<span class="checkmark"></span>
+												</label>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-group terms">
+												<label class="container_check">have a already account <a href="auth/login/">Login Now!</a>
+												</label>
+											</div>
+										</div>
+										
+									</div>
+								
+									<!-- /row -->
+									
+								</div>
+								<!-- /step-->
+								<!-- /step-->
+							</div>
+							<!-- /middle-wizard -->
+							<div id="bottom-wizard">
+								<button type="submit" name="forward" id="regisProcess" onclick="registerForm();" class="forward">Next</button> 	
+								
+							</div>
+							<!-- /bottom-wizard -->
+						</form>
+					</div>
+					<!-- /Wizard container -->
+			</div>
+			<!-- /content-right-->
+		</div>
+		<!-- /row-->
+	</div>
+	<!-- /container-fluid -->
+
+	<div class="cd-overlay-nav">
+		<span></span>
+	</div>
+	<!-- /cd-overlay-nav -->
+
+	<div class="cd-overlay-content">
+		<span></span>
+	</div>
+	<!-- /cd-overlay-content -->
+
+
+	<!-- /menu button -->
+	
+	<!-- Modal terms -->
+	<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p><strong>Criterion Tech Private Limited (“Criterion Tech”)</strong> is the owner, proprietor and operator of the website www.criteriontech.in (“Website”) and affiliate sites namely digidoctor.in, edumation,in , knowmed.com, nutrianalyser.com and medvantage.tech and also mobile applications namely digidoctor, edumation, knowmed ,nutrianalyser, available on the Google Play Store and the Apple App Store (“Mobile App”). Criterion Tech provides healthcare and educational related software products.</p>
+					</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+
+	<!-- Modal terms -->
+	<div class="modal otpsection-txt" id="otpsection-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" id="closemodel">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel">OTP Verification</h4>
+					<button type="button" class="btn-close" id="closeOtpsec" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div id="otpmsg"></div>
+					<form id="verifyOtp" method="POST" action="javascript::void();" name="verifyOtp">
+						<input type="hidden" name="customerEmail" id="customerEmail">
+						<input type="hidden" name="customerPhone" id="customerPhone">
+						<input type="hidden" name="personname" id="personname">
+						<input type="hidden" name="companyname" id="companyname">
+						<input type="hidden" name="customerId" id="customerId">
+						
+						
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="form-group">
+								<input type="number" name="otpNumber" required id="otpNumber" required class="form-control required" placeholder="Enter otp*">
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="form-group">
+								<button type="submit" name="resetotp" id="resetotp" class="btn btn-warning">Resend OTP</button>
+							
+								<button type="submit" name="submitotp" onclick="otpverify();" id="submitotp" class="btn btn-primary">Verify OTP</button>
+							</div>
+							<p class="lead counter"></p>
+						</div>
+					</div>
+					</div>
+				<div class="modal-footer">
+					&nbsp;
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	
+	<!-- COMMON SCRIPTS -->
+	<script src="js/jquery-3.6.4.min.js"></script>
+    <!-- <script src="js/common_scripts.min.js"></script> -->
+	<script src="js/velocity.min.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/countdowntimer.js"></script>
+	<!-- Wizard script -->
+	<script src="js/survey_func.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		$('.counter').setCountDownTimer({
+    time: "00:02:00",
+    button: $('#resetotp'),
+    countDownText: 'Remaining time:',
+    afterCountText: 'Time\'s up!'
+   });
+	</script>
+
+</body>
+</html>
